@@ -20,19 +20,19 @@
     </header>
     <main>
         <section class=" mx-10 grid grid-cols-4 gap-4">
-            <div class="grid grid-cols-3 gap-4 col-span-3 text-center">
+            <div class="grid grid-cols-3 gap-4 col-span-3 text-center" id="inputValue">
                 <div class="p-10 border rounded-lg ">
                     <img class="h-48" src="images/triangle.png" alt="">
                   <div class="mt-8">
                     <h1 class="text-2xl font-bold text-[#414141]">Triangle</h1>
                     <p class=" my-2.5 text-sm text-[#414141]">Area (A) = 0.5 X b X h</p>
-                    <p class=" text-[#414141]">b=0cm, h=0cm</p>
+                    <p class=" text-[#414141]">b=<span id="tri-b">0</span>cm, h=<span id="tri-h">0</span>cm</p>
                   </div>
-                   <div class="mt-5">
-                  <input type="text" placeholder="b"  class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
-                    <input type="text" placeholder="h" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
-                   </div>
-                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold">Calculate</button>
+                   <div class="mt-5 " id="input-triangle">
+                  <input type="text" placeholder="b" id="inb"  class="in bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
+                    <input type="text" placeholder="h" id="inh" class="in bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
+                   </div >
+                    <button id="calculate-traingle" class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold" >Calculate</button>
                 </div>
                 <div class="p-10 border rounded-lg">
                     <img class="h-48" src="images/rectangle.png" alt="">
@@ -107,12 +107,13 @@
                
                 <div class="flex justify-evenly items-center pt-7">
                     <p><span>1.</span>Triangle</p>
-                    <p>123cm<sup>2</sup></p>
+                    <p><span id="triangle-value">123</span> cm<sup>2</sup></p>
                     <button class="bg-[#1090D8] text-sm px-2 text-white rounded-lg py-2  font-semibold">Convert to m<sup>2</sup></button>
                 </div>
                
             </div>
         </section>
     </main>
+    <script src="JS/app.js"></script>
 </body>
 </html>
