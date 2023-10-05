@@ -8,6 +8,7 @@ valueCheck('ini','rec-i')
 
 
 let  i = 0;
+let id=0;
 
 document.getElementById('calculate-traingle').addEventListener('click',function(){
 
@@ -24,7 +25,7 @@ document.getElementById('calculate-traingle').addEventListener('click',function(
        
         div.innerHTML = `
         <p><span>${++i}. </span>Triangle</p>
-        <p><span id="tri-value">${totalTriArea}</span> cm<sup>2</sup></p>
+        <p><span id=${++id}>${totalTriArea}</span> cm<sup>2</sup></p>
         <button class="bg-[#1090D8] text-sm px-2 text-white rounded-lg py-2  font-semibold">Convert to m<sup>2</sup></button>
         `
         newHtml.appendChild(div)
@@ -50,7 +51,7 @@ document.getElementById('calculate-rec').addEventListener('click',function(){
    
     div.innerHTML = `
     <p><span>${++i}. </span>Rectengle</p>
-    <p><span id="rec-value">${totalRecArea}</span> cm<sup>2</sup></p>
+    <p><span id=${++id}>${totalRecArea}</span> cm<sup>2</sup></p>
     <button class="bg-[#1090D8] text-sm px-2 text-white rounded-lg py-2  font-semibold">Convert to m<sup>2</sup></button>
     `
     newHtml.appendChild(div)
