@@ -44,8 +44,9 @@ function addElementToList (elementName, totalArea){
    
     // div.classList.add('flex', 'justify-evenly', 'items-center', 'pt-7')
     li.id = `item-${i}` // add korar id
+    li.classList.add('mt-3')
     li.innerHTML = `
-    <span>${i++}.</span><span class="mr-2">${elementName}</span><span>${totalArea}</span>cm<sup>2</sup><button class="bg-[#1090D8] text-sm mx-2 px-2 text-white rounded-lg py-2  font-semibold">Convert to m<sup>2</sup></button> <button class=" text-3xl text-red-600 font-bold delete">x</button>
+    <span>${i++}.</span><span class="mr-1">${elementName}:</span><span>${totalArea}</span>cm<sup>2</sup><button class="bg-[#1090D8] text-xs ml-2 px-1 text-white rounded-lg py-2  font-semibold">Convert to m<sup>2</sup></button> <button class=" text-3xl text-red-600 font-bold delete">x</button>
     `
     newHtml.appendChild(li)
     updateSerialNumber()
@@ -61,7 +62,6 @@ function deleteItems(itemId){
 }
 
 function dltarea()
-
 {
     const alldlt = document.getElementsByClassName('delete')
 for(const dlt of alldlt)
