@@ -65,39 +65,39 @@
                   <div class="mt-8">
                     <h1 class="text-2xl font-bold text-[#414141]">Rhombus</h1>
                     <p class=" my-2.5 text-sm text-[#414141]">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
-                    <p class=" text-[#414141]">d<sub>1</sub>=0cm, d<sub>2</sub>=0cm</p>
+                    <p class=" text-[#414141]">d<sub>1</sub>=<span id="rhom-d1">0</span>cm, d<sub>2</sub>=<span id="rhom-d2">0</span>cm</p>
                   </div>
                    <div class="mt-5">
-                  <input type="text" placeholder='d1'  class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
-                    <input type="text" placeholder="d2" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
+                  <input type="text" placeholder='d1' id="rhomind1" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
+                    <input type="text" placeholder="d2" id="rhomind2" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
                    </div>
-                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold">Calculate</button>
+                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold" id="calculate-rhom">Calculate</button>
                 </div>
                 <div class="p-10 border rounded-lg">
                     <img class="h-48" src="images/pentagon.png" alt="">
                   <div class="mt-8">
                     <h1 class="text-2xl font-bold text-[#414141]">Pentagon</h1>
                     <p class=" my-2.5 text-sm text-[#414141]">Area (A) = 0.5 X p X b</p>
-                    <p class=" text-[#414141]">p=0cm, b=0cm</p>
+                    <p class=" text-[#414141]">p=<span id="pent-p">0</span>cm, b=<span id="pent-b">0</span>cm</p>
                   </div>
                    <div class="mt-5">
-                  <input type="text" placeholder="p"  class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
-                    <input type="text" placeholder="b" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
+                  <input type="text" placeholder="p" id="pentinp"  class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
+                    <input type="text" placeholder="b" id="pentinb" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
                    </div>
-                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold">Calculate</button>
+                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold" id="calculate-pent">Calculate</button>
                 </div>
                 <div class="p-10 border rounded-lg">
                     <img class="h-48" src="images/ellipse.png" alt="">
                   <div class="mt-8">
                     <h1 class="text-2xl font-bold text-[#414141]">Ellipse</h1>
                     <p class=" my-2.5 text-sm text-[#414141]">Area (A) = &#960;ab</p>
-                    <p class=" text-[#414141]">a=0cm, b=0cm</p>
+                    <p class=" text-[#414141]">a=<span id="ellip-a">0</span>cm, b=<span id="ellip-b">0</span>cm</p>
                   </div>
                    <div class="mt-5">
-                  <input type="text" placeholder="a"  class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
-                    <input type="text" placeholder="b" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
+                  <input type="text" placeholder="a" id="ellipina" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]">  <span class="mx-1">cm</span>
+                    <input type="text" placeholder="b" id="ellipinb" class="bg-[#F1F1F1] w-4/12 rounded-md px-2 py-1 placeholder-[#414141]"><span class="ms-2">cm</span>
                    </div>
-                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold">Calculate</button>
+                    <button class="bg-[#1090D8] w-full text-white rounded-lg py-2 mt-8 font-semibold" id="calculate-ellip">Calculate</button>
                 </div>
               
             </div>
